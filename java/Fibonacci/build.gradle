@@ -5,6 +5,7 @@ apply plugin: 'application'
 mainClassName = myMain
 
 // https://stackoverflow.com/questions/34875637/how-to-pass-multiple-parameters-in-command-line-when-running-gradle-task
+// e.g.: gradle fib -Pn=1212
 task fib(type: JavaExec) {
    classpath = sourceSets.main.runtimeClasspath
    main = myMain
