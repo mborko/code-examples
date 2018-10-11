@@ -34,3 +34,7 @@
 
 bin/
 build/
+
+# Gradle stuff
+gradle*
+.gradle/
