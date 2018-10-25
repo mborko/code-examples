@@ -1,0 +1,10 @@
+[Main process] Starting with default parameters
+[Main process] numbers: 6 ceiling: 45 tips: 2147483647
+[Main process] Shutdown hook added
+[Shutdown thread] Shutting down
+There are now 755175 tips in the map, but with only 721304 unique tips!
+#1 occurances with 688469 tips
+#2 occurances with 31821 tips
+#3 occurances with 992 tips
+#4 occurances with 22 tips
+[Shutdown thread] Thread was running for 00:35:47

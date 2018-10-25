@@ -1,0 +1,194 @@
+commit 73ef5ee925309ea170f302035b6290f0c5acef63
+Merge: 80a3aed ccbb70f
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Thu Nov 14 22:24:56 2013 +0100
+
+    Merge branch 'master' of https://github.com/efrantar-tgm/SYT-A06-Sudoku
+
+commit 80a3aeddaa576007ddb4b46c4559ea1413dde033
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Thu Nov 14 22:24:12 2013 +0100
+
+    everything should be working now
+
+commit ccbb70f761536c54630318c4fba569d5c0a106c2
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Thu Nov 14 20:54:00 2013 +0100
+
+    header macros altered
+
+commit df52a43b8e638eee2b45abe9ce50ee0692d2c5e9
+Merge: c5b4630 6c43318
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Thu Nov 14 20:25:27 2013 +0100
+
+    Merge branch 'master' of https://github.com/efrantar-tgm/SYT-A06-Sudoku
+
+commit c5b463038199a34d3db0751e0090fb5562828735
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Thu Nov 14 20:24:57 2013 +0100
+
+    saving manual input implemented
+
+commit 6c433189cafec08d77f53dbdcdf163b6d9b733f5
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Thu Nov 14 20:03:40 2013 +0100
+
+    comment updated and minor fix
+
+commit 2b5fce3fe41df2e5ba824ab6f3a9bade569e4832
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Thu Nov 14 19:46:43 2013 +0100
+
+    updated documentation
+
+commit 4e61bf2d7ada22c297e715102470f421db186cf4
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Thu Nov 14 11:53:47 2013 +0100
+
+    minor fix
+
+commit cf957e00c3e0d207b678052b73e313d42584c136
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Thu Nov 14 11:52:35 2013 +0100
+
+    commented and new output format
+
+commit 26cdb16a0da8952386ca7adb3918bb2e3dfd5195
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Wed Nov 13 14:21:53 2013 +0100
+
+    formatted the code
+
+commit 7bddcfcec67a2fc13915c8c7fa6a713fdc0559b3
+Merge: 58291fc 91c0455
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Wed Nov 13 14:01:38 2013 +0100
+
+    Merge branch 'master' of https://github.com/efrantar-tgm/SYT-A06-Sudoku
+
+commit 91c0455cc8def55f90a18d119153f8409f2224da
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Wed Nov 13 14:10:12 2013 +0100
+
+    xsudoku algorithm added
+
+commit 58291fc994252a628190009619ca931d8d929313
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Wed Nov 13 14:00:52 2013 +0100
+
+    normal solver now working
+
+commit e72c7ccdeb4e08718536c0a1501b04422272b4e0
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Wed Nov 13 12:32:33 2013 +0100
+
+    minor fixes
+
+commit e1d3d54e06a3b88c9afa590a90cdf5e7b68bac28
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Wed Nov 13 12:08:34 2013 +0100
+
+    update makefile
+
+commit 01ab8bf7cc27dfc509bafb827bcf35210c72a1ff
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Wed Nov 13 12:13:54 2013 +0100
+
+    added prototype and solvex
+
+commit dbb06dd7b1c6185bcabb99b28ef63994e2cd3ddb
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Wed Nov 13 11:20:32 2013 +0100
+
+    renamed files
+
+commit 37581c1fa44684e58d81bdfaff26402f499bd997
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Mon Nov 11 21:34:51 2013 +0100
+
+    puzzle printing improved
+
+commit 34911fec052a1a1d1556b4bbefe7218d7c59231a
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Mon Nov 11 10:23:23 2013 +0100
+
+    csv output
+
+commit 162a4648b001b5bea8b3c6b3b2b1c327f6ead472
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Mon Nov 11 10:23:00 2013 +0100
+
+    makefile changed
+
+commit d119234fcedded206f2b93f54ec288c364f2ea83
+Author: Gary Ye <gye@student.tgm.ac.at>
+Date:   Mon Nov 11 10:17:56 2013 +0100
+
+    minor fix
+
+commit 65800279212f72cbac7a1582dcc3cd22afc72bf4
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Mon Nov 11 10:05:46 2013 +0100
+
+    alg for testing
+
+commit f0def086ba993686c07f20a7d35d8f966a876aed
+Author: efrantar-tgm <efrantar@student.tgm.ac.at>
+Date:   Mon Nov 11 09:53:41 2013 +0100
+
+    added normal solver
+
+commit b9c5de096b73ef8ae5ff59fbdd769a118183cc12
+Author: gye-tgm <gye@student.tgm.ac.at>
+Date:   Sun Nov 10 16:18:54 2013 +0100
+
+    identation
+
+commit e1b249f16a2888ef7675f35c4085b80a33288085
+Author: i_turo <aegontargaryenii@gmail.com>
+Date:   Sun Nov 10 15:53:15 2013 +0100
+
+    added ouput() and removed unnecessary files
+
+commit 7b4eb8ca9133d78fee8fa174498ad30113019433
+Author: i_turo <aegontargaryenii@gmail.com>
+Date:   Sun Nov 10 15:52:31 2013 +0100
+
+    updated .gitignore
+
+commit fc0637dcd1af48bf7ae18c4f16bc4cff75deab0a
+Author: gye-tgm <gye@student.tgm.ac.at>
+Date:   Sun Nov 10 14:02:57 2013 +0100
+
+    sudoku test file added
+
+commit fe738f3dfda6170c9b27305c0dff145a1d8c3456
+Author: gye-tgm <gye@student.tgm.ac.at>
+Date:   Sun Nov 10 14:02:43 2013 +0100
+
+    input from user and file added
+
+commit 58bfe97c003f11c78c20c8e6b3858f80dcabe0e8
+Author: gye-tgm <gye@student.tgm.ac.at>
+Date:   Sun Nov 10 14:02:14 2013 +0100
+
+    binary filename changed to "sudoku"
+
+commit 5b30afa28506f8420951501f2fcd54dc3376cb0f
+Author: i_turo <aegontargaryenii@gmail.com>
+Date:   Sun Nov 10 13:49:52 2013 +0100
+
+    created project structure with working makefile
+
+commit 17ae09daf9dcde55908d9aeecc87cb4b251a85cc
+Author: i_turo <aegontargaryenii@gmail.com>
+Date:   Sun Nov 10 12:43:59 2013 +0100
+
+    created structure of makefile
+
+commit 83088dc1ab8c9ee3eb93dc7c703a725070d6cdd6
+Author: Elias Frantar <efrantar@student.tgm.ac.at>
+Date:   Sun Nov 10 02:57:27 2013 -0800
+
+    Initial commit

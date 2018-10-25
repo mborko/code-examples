@@ -1,0 +1,51 @@
+[Main process] Starting with given parameters
+[Main process] numbers: 6 ceiling: 45 tips: 12345678
+[Main process] Shutdown hook added
+[Shutdown thread] Shutting down
+There are now 972107 tips in the map, but with only 916491 unique tips!
+#1 occurances with 863056 tips
+#2 occurances with 51314 tips
+#3 occurances with 2064 tips
+#4 occurances with 57 tips
+#5 occurances with 1 tips
+[6, 19, 28, 36, 39, 42] 
+[Shutdown thread] Thread was running for 01:36:58
+
+[Main process] Starting with default parameters
+[Main process] numbers: 6 ceiling: 45 tips: 2147483647
+[Main process] Shutdown hook added
+[Shutdown thread] Shutting down
+There are now 971547 tips in the map, but with only 915700 unique tips!
+#1 occurances with 862070 tips
+#2 occurances with 51483 tips
+#3 occurances with 2080 tips
+#4 occurances with 67 tips
+#5 occurances with 1 tips
+[2, 3, 9, 21, 23, 24] 
+[Shutdown thread] Thread was running for 01:40:04
+
+[Main process] Starting with default parameters
+[Main process] numbers: 6 ceiling: 45 tips: 2147483647
+[Main process] Shutdown hook added
+[Shutdown thread] Shutting down
+There are now 1164870 tips in the map, but with only 1085068 unique tips!
+#1 occurances with 1008968 tips
+#2 occurances with 72516 tips
+#3 occurances with 3468 tips
+#4 occurances with 114 tips
+#5 occurances with 2 tips
+[4, 6, 13, 30, 41, 42] [5, 8, 17, 18, 27, 41] 
+[Shutdown thread] Thread was running for 01:58:50
+
+[Main process] Starting with default parameters
+[Main process] numbers: 6 ceiling: 45 tips: 2147483647
+[Main process] Shutdown hook added
+^C[Shutdown thread] Shutting down
+There are now 431496 tips in the map, but with only 420197 unique tips!
+#1 occurances with 409129 tips
+#2 occurances with 10839 tips
+#3 occurances with 229 tips
+#4 occurances with 1 tips
+[1, 5, 12, 22, 23, 31] 
+[Shutdown thread] Thread was running for 00:11:38
+
