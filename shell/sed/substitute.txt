@@ -1,0 +1,3 @@
+Das ist ein Text mit Rechschreibfeehlern.
+Wieder ein Feehler. Sogar zwei Feehler auf einer Zeile.
+Dieser TEEXT Text is zuviel.

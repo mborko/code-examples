@@ -1,0 +1,5 @@
+sed 's/^\([[:space:]]*[0-9]\{1,\}\)/\10/' test.txt 
+
+sed -i s/SEARCH/REPLACE/g *.txt
+
+sed 's/^HELLO WORLD ([a-z_]*, [a-z_]*)/& 16/' file

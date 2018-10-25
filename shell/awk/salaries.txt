@@ -1,0 +1,4 @@
+Maier	3000
+Mueller	5000
+Sommer	1500
+Cap	3700

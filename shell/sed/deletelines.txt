@@ -1,0 +1,5 @@
+Das ist ein Text mit mehreren Zeilen.
+Der BEGIN Block beginnt einen Block,
+der erst einige Zeilen spaeter
+mit einem END endet.
+Hier ist noch eine Zeile.
