@@ -1,0 +1,19 @@
+Connection established.
+>: emptyfile.txt
+readme.txt
+funny-stuff
+nopermission
+password-cracker
+x-rated.txt
+>: somefile.txt
+>: 4475
+>: 212 Not found
+>: >: wordlist
+>: 200 Command not recognised
+>: 212 Not found
+>: 214 You can't get a directory
+>: 213 Access denied
+>: 200 Command not recognised
+>: 214 You can't get a directory
+>: 212 Not found
+>: 

@@ -1,0 +1,68 @@
+
+    A Comparison of Operating Systems
+
+DOS AIR
+All the passengers go out onto the runway, grab hold of the plane, push
+it until it gets into the air, hop on, jump off when it hits the ground
+again. Then they grab the plane again, push it back into the air, hop
+on, et cetera.
+
+MAC AIRWAYS
+The cashiers, flight attendants and pilots all look the same, feel the
+same and act the same. When asked questions about the flight, they reply
+that you don't want to know, don't need to know and would you please
+return to your seat and watch the movie.
+
+WINDOWS AIRLINES
+The terminal is very neat and clean, the attendants all ver y
+attractive, the pilots very capable. The fleet of Learjets the carrier
+operates is immense. Your jet takes off without a hitch, pushing above
+the clouds, and at 20,000 feet it explodes without warning.
+
+OS/2 SKYWAYS
+The terminal is almost empty, with only a few prospective passengers
+milling about. The announcer says that their flight has just departed,
+wishes them a good flight, though there are no planes on the runway.
+Airline personnel walk around, apologising profusely to customers in
+hushed voices, pointing from time to time to the sleek, powerful jets
+outside the terminal on the field. They tell each passenger how good the
+real flight will be on these new jets and how much safer it will be than
+Windows Airlines, but that they will have to wait a little longer for
+the technicians to finish the flight systems. Maybe until mid 1995.
+Maybe longer.
+
+FLY WINDOWS NT
+All the passengers carry their seats out onto the tarmac, placing the
+chairs in the outline of a plane. They all sit down, flap their arms and
+make jet swooshing sounds as if they are flying.
+
+UNIX EXPRESS
+All passengers bring a piece of the airplane and a box of tools with
+them to the airport. They gather on the tarmac, arguing constantly about
+what kind of plane they want to build and how to put it together.
+Eventually, the passengers split into groups and build several different
+aircraft, but give them all the same name. Some passengers actually
+reach their destinations. All passengers believe they got there.
+
+WINGS OF OS/400
+The airline has bought ancient DC3s, arguably the best and safest planes
+that ever flew, and painted "747" on their tails to make them look as if
+they are fast. The flight attendants, of course, attend to your every
+need, though the drinks cost $15 for an orange juice. Stupid questions
+cost $230 per hour, unless you have Supportline, which requires a first
+class ticket and membership in the frequent flyer club. Then they cost
+$500, but your accounting department can call it overhead.
+
+MVS AIRLINES
+The passengers all gather in the hangar, watching hundreds of
+technicians check the flight systems on this immense, luxury aircraft.
+This plane has at least 10 engines and seats over 1,000 passengers.
+Bigger models in the fleet can have more engines than anyone can count
+and fly even more passengers than there are on Earth. It is claimed to
+cost less per passenger mile to operate these humungous planes than any
+other aircraft ever built, unless you personally have to pay for the
+ticket. All the passengers scramble aboard, as do the 200 technicians
+needed to keep it from crashing. The pilot takes his place up in the
+glass cockpit. He guns the engines, only to realise that the plane is
+too big to get through the hangar doors.
+

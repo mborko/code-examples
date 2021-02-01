@@ -1,0 +1,191 @@
+
+1. INTRODUCTION
+
+   The objective of the TGM Simple File Transfer Protocol (TGMSFTP) is to
+   transfer text files reliably and efficiently in the AMFT environment.
+
+   Using the TGMSFTP, clients can query servers for the text (i.e., ASCII) 
+   files they are offering for download and can retrieve these files over
+   the network. 
+
+   An important feature of TGMSFTP is its simplicity. Nevertheless, it
+   has been widely reported to be making life "hard" for students who
+   hate to write code ;-)
+
+2. SUMMARY OF ALL COMMUNICATION MESSAGES AND ERROR CODES IN THE PROTOCOL
+
+   This section lists and explains all possible commands the client
+   can send to the server and all messages that the server can send to
+   the client. \n denotes new line (just like in Java).
+
+   Client Commands
+   ---------------
+
+   1.) LS\n<file or directory>\n 
+
+       List file or directory.
+
+   2.) GET\n<file>\n 
+
+       Retrieve file.
+
+   3.) QUIT\n
+   
+       End communication session with the server.
+
+   Server Messages
+   ---------------
+
+   1.) 100 Welcome to the AMFT File Server\n
+
+       This message is sent by the server to the client whenever a
+       client connects.
+
+   2.) 107 Sayonara, take good care now\n
+
+       This message is sent by the server to the client whenever a
+       client disconnects. Hey, it is nice to say goodbye ;-)
+
+   3.) 108 Sending you file length\n<file length>\n
+
+       This message is sent by the server to the client whenever a
+       client issues a LS\n command on a file. In this case, the
+       server sends the length of the file (i.e., <file length>).
+
+   4.) 109 File list follows\n<number of files>\n<list of files>\n
+
+       This message is sent by the server to the client whenever a
+       client issues a LS\n command on a directory. In this case, the
+       server first sends the number of the files in the directory
+       (i.e., <number of files>) and sends the names of the files
+       (i.e., <list of files>). Each file name is written on a
+       separate line (see the examples we provide at the end of
+       this document).
+       
+   5.) 110 Sending you file\n<file contents>\n:\n
+
+       This message is sent by the server to the client whenever a
+       client issues a GET\n command for a file that can be downloaded
+       (i.e., the file is readable and it exists). In this case, the
+       server starts sending the file contents. The server indicates 
+       that the transfer has ended by sending a single colon (i.e., ":" character)
+       on a single line (i.e., \n:\n). Because the ":" character can
+       appear in normal text, the server escapes all ":" in the text with
+       the "::" string in order not to confuse the client. 
+       For example, the following text:
+
+       This is an example text: Hello world.
+
+       Would become:
+
+       This is an example text:: Hello world. 
+
+   6.) 200 Command not recognised\n
+
+       This message is sent by the server to the client whenever a
+       client issues an unknown command.
+
+   7.) 212 Not found\n
+
+       This message is sent by the server to the client whenever a
+       client issues an LS or GET command on a file or directory that does not
+       exist.
+
+   8.) 213 Access denied\n
+
+       This message is sent by the server to the client whenever a
+       client issues a LS or GET command on a file or directory that
+       does not have read permission.
+
+   9.) 214 You can't get a directory\n
+
+       This message is sent by the server to the client whenever a
+       client issues a GET command on a directory.
+
+3. COMMUNICATION EXAMPLES
+
+   In this section, we provide some communication examples to clarify
+   how the TGMSFTP works. In the examples, C>S denotes a message being
+   sent from the client to the server and S>C denotes a message being
+   sent from the server to the client. \n denotes new line
+   (just like in Java).
+
+   Example 1 (Client connects and immediately disconnects)
+   ------------------------------------------------------
+
+   C>S (Client connects to server)
+   S>C 100 Welcome to the AMFT File Server\n
+   C>S QUIT\n
+   S>C 107 Sayonara, take good care now\n
+
+   Example 2 (Client lists the contents of root directory /)
+   ------------------------------------------------------
+
+   C>S LS\n
+   C>S /\n
+   S>C 109 File list follows\n
+   S>C 6\n
+   S>C readme.txt\n
+   S>C nopermission\n
+   S>C funny-stuff\n
+   S>C emptyfile.txt\n
+   S>C x-rated.txt\n
+   S>C password-cracker\n
+
+
+   Example 3 (Client asks for the listing of unknown file or
+   directory)
+   ---------------------------------------------------------
+
+   C>S LS\n
+   C>S amft\n
+   S>C 212 Not found\n
+
+   Example 4 (Client tries to list directory that is read-protected)
+   ----------------------------------------------------------------
+
+   C>S LS\n
+   C>S /nopermission\n
+   S>C 213 Access denied\n
+
+   Example 5 (Client retrieves the contents of file readme.txt)
+   ----------------------------------------------------------------
+
+   C>S GET\n
+   C>S /readme.txt\n
+   S>C 110 Sending you file\n
+   S>C Hello dear AMFT candidate,\n
+   S>C \n
+   S>C If you are reading this, then you have some how managed to get access to it\n
+   S>C ;-) Nice going. Feel free to use these files for your testing purposes.\n
+   S>C \n
+   S>C Here is some file information::\n
+   S>C \n
+   S>C emptyfile.txt:: This is an empty file\n
+   S>C funny-stuff:: This directory contains some funny stuff\n
+   S>C nopermission:: This directory is read-protected.\n
+   S>C \n
+   S>C AMFT Team\n
+   S>C \n:\n
+
+   Example 6 (Client tries to download a directory)
+   ----------------------------------------------------------------
+
+   C>S GET\n
+   C>S /funny-stuff\n
+   S>C 214 You can't get a directory\n
+
+   Example 7 (Client issues unknown command)
+   ----------------------------------------------------------------
+
+   C>S Hello world\n
+   S>C 200 Command not recognised\n
+
+   Example 8 (Client would like to find out the length of /readme.txt)
+   ----------------------------------------------------------------
+
+   C>S LS\n
+   C>S /readme.txt\n
+   S>C 108 Sending you file length\n
+   S>C 361\n
+

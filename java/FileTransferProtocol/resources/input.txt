@@ -1,0 +1,14 @@
+ls
+ls funny-stuff/somedirectory
+ls funny-stuff/chicken.txt
+ls funny-stuff/gibtsnicht
+get funny-stuff/chicken.txt
+ls password-cracker
+asf
+get funny-stuff/gibtsnicht
+get funny-stuff
+ls nopermission
+asf xz
+get
+get readme.txt readme.txt
+quit
