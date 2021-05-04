@@ -19,6 +19,7 @@ public class TestPermissions {
 
     SecurityManager secManager = new SecurityManager();
     SocketPermission perm = new SocketPermission("localhost:1024-", "accept,connect,listen");
+
     if ( secManager != null )
       secManager.checkPermission(perm);
     System.setSecurityManager(secManager);

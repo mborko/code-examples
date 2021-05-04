@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'idea'
+    id 'eclipse'
+    id 'jacoco'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+task client(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    main = 'simplechat.client.SimpleChat'
+}
+
+task server(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    main = 'simplechat.server.SimpleChat'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
+    compile 'org.loadui:testFx:3.1.2'
+    implementation 'com.google.guava:guava:26.0-jre'
+    testImplementation 'junit:junit:4.12'
+    testCompile "org.testfx:testfx-core:4.0.6-alpha"
+    testCompile "org.testfx:testfx-junit:4.0.6-alpha"
+    compile group: 'com.google.guava', name: 'guava', version: '27.0.1-jre'
+}
+
+jacoco {
+    toolVersion = "0.8.2"
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        csv.enabled false
+    }
+}
+
+javafx {
+    version = "11"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
