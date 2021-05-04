@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:27.0.1-jre'
+    testImplementation 'junit:junit:4.12'
+}
+
+// e.g.: gradle concurrency --args="[minPrime] [maxPrime] [threadCount]"
+task concurrency(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'primes.concurrency.Main'
+    standardInput = System.in
+}
+
+// e.g.: gradle ipcserver --args="[hostname] [port]"
+task ipcserver(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'primes.ipc.Server'
+    standardInput = System.in
+}
+
+// e.g.: gradle ipcclient --args="[hostname] [port] [start] [count]"
+task ipcclient(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'primes.ipc.Client'
+    standardInput = System.in
+}
+
