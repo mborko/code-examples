@@ -12,26 +12,28 @@ plugins {
 }
 
 repositories {
-    // Use JCenter for resolving dependencies.
-    jcenter()
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
 }
 
 dependencies {
     // Use JUnit test framework.
-    testImplementation 'junit:junit:4.13'
+    testImplementation 'junit:junit:4.13.2'
 
     // This dependency is used by the application.
-    implementation 'com.google.guava:guava:29.0-jre'
+    implementation 'com.google.guava:guava:31.0.1-jre'
 }
 
 // e.g.: gradle client --args="localhost 12345"
 task client(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     main = 'lightweightFileTransfer.Client'
+    standardInput = System.in
 }
 
 // e.g.: gradle server --args="12345 1234 pass"
 task server(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     main = 'lightweightFileTransfer.Server'
+    standardInput = System.in
 }
