@@ -37,4 +37,5 @@ build/
 
 # Gradle stuff
 gradle*
+gradle/
 .gradle/
