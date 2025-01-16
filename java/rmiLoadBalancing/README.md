@@ -21,7 +21,10 @@ Der Task wird ausgeführt
 
 <img src="img\bild1.png" />
 
-
+2.5.) Als nächstes, muss man einen server starten
+```bash
+gradle server
+```
 
 3.) Dann eine neues Terminal öffnen und den Client starten 
 
