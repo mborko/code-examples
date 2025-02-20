@@ -1,6 +1,6 @@
 # Realtime Voting System
 
-Credits to [Raju Ranjan](https://github.com/rajuranjan00/Real-time-voting-system).
+Credits to [Raju Ranjan Yadav](https://github.com/rajuranjan00/Real-time-voting-system).
 
 This repository contains the code for a realtime election voting system. The system is built using Python, Kafka, Spark Streaming, Postgres and Streamlit. The system is built using Docker Compose to easily spin up the required services in Docker containers.
 
