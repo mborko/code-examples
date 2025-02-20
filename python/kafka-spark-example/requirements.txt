@@ -1,0 +1,11 @@
+requests~=2.31.0
+simplejson~=3.19.2
+matplotlib~=3.8.2
+numpy~=1.26.3
+pandas~=2.2.0
+streamlit~=1.30.0
+pyspark~=3.5.0
+psycopg2
+confluent_kafka
+kafka-python-ng
+streamlit_autorefresh
