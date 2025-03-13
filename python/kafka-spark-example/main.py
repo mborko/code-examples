@@ -114,11 +114,12 @@ def create_tables(conn, cur):
 
 
 def insert_voters(conn, cur, voter):
+    print(voter)
     cur.execute("""
                         INSERT INTO voters (voter_id, voter_name, date_of_birth, gender, nationality, registration_number, address_street, address_city, address_state, address_country, address_postcode, email, phone_number, cell_number, picture, registered_age)
                         VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s,%s,%s,%s,%s,%s)
                         """,
-                (voter["voter_id"], voter['voter_name'], voter['date_of_birth'], voter['gender'],
+                (voter['voter_id'], voter['voter_name'], voter['date_of_birth'], voter['gender'],
                  voter['nationality'], voter['registration_number'], voter['address']['street'],
                  voter['address']['city'], voter['address']['state'], voter['address']['country'],
                  voter['address']['postcode'], voter['email'], voter['phone_number'],
