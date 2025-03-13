@@ -15,7 +15,7 @@ if __name__ == "__main__":
              .config("spark.jars.packages",
                      "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,commons-logging:commons-logging:1.2")  # Spark-Kafka integration
              .config("spark.jars",
-                     "postgresql-42.7.1.jar")  # PostgreSQL driver
+                     "postgresql-42.7.5.jar")  # PostgreSQL driver
              .config("spark.sql.adaptive.enabled", "false")  # Disable adaptive query execution
              .getOrCreate())
 
