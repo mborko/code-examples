@@ -38,9 +38,6 @@ import compute.Compute;
 
 public class ComputePi {
     public static void main(String args[]) {
-        if (System.getSecurityManager() == null) {
-            System.setSecurityManager(new SecurityManager());
-        }
         try {
         	// Hier ist was ganz wichtiges
             String name = "Compute";
