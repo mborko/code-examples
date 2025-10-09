@@ -5,20 +5,20 @@ plugins {
 
 task engine(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
-    main = 'engine.ComputeEngine'
+    mainClass = 'engine.ComputeEngine'
     standardInput = System.in
 }
 
 task server(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
-    main = 'engine.ComputeServer'
+    mainClass = 'engine.ComputeServer'
     standardInput = System.in
 }
 
 // e.g.: gradle compute --args="localhost Fibonacci 1234"
 task compute(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
-    main = 'client.ComputeTask'
+    mainClass = 'client.ComputeTask'
 }
 
 dependencies {
@@ -27,5 +27,7 @@ dependencies {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
+    google()
+    gradlePluginPortal()
 }
