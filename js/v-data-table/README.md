@@ -24,4 +24,9 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Resources
-* https://github.com/desoga10/v-data-table
+* Repository based from [Deji Adesoga](https://github.com/desoga10/v-data-table)
+* [Vuetify Documentation](https://vuetifyjs.com/en/)
+* [Vuetify Basic Data Tables](https://vuetifyjs.com/en/components/data-tables/basics/#usage)
+* [Vue.js Documentation](https://vuejs.org/)
+* [Axios Documentation](https://axios-http.com/docs)
+* [Vue CLI Documentation](https://cli.vuejs.org/)
