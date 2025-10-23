@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar color="primary" dark>
-      <v-app-bar-title>Data Table</v-app-bar-title>
+      <v-app-bar-title>Vue Data Table</v-app-bar-title>
       <v-spacer></v-spacer>
       <v-switch
           v-model="isDark"
