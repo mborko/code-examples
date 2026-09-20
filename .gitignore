@@ -5,6 +5,9 @@
 *.obj
 *.elf
 
+# Packages
+*.jar
+
 # Precompiled Headers
 *.gch
 *.pch
